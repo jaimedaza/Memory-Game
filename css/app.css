@@ -81,6 +81,12 @@ h1 {
     font-size: 33px;
 }
 
+.deck .card.noMatch {
+    transform: rotateY(0);
+    background: red;
+    cursor: default;
+}
+
 /*
  * Styles for the Score Panel
  */
@@ -106,4 +112,36 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.score-panel #basicUsage {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.score-panel .moves {
+    margin-left: 5px;
+}
+
+/* Style for the winner Popup*/
+
+#winnerPopup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    height: 40%;
+    width: 40%;
+    /*margin: 0% 20% 20% 20%;*/
+    z-index: 10;
+    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    /*background-color: white;*/
+    text-align: center;
+    font-family: helvetica;
+
+}
+
+#winnerPopup button{
+    font-size: 20px;
 }
